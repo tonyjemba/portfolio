@@ -1,8 +1,9 @@
-FROM nginx:1.25.2-alpine
+FROM ubuntu:22.04
+
+#installing nginx,snap
+RUN apt-get update && apt-get install -y nginx && apt-get install -y snapd
 
 
-# install nano
-RUN apk update && apk add nano
+#running nginx in the  foreground
+CMD ["nginx", "-g", "daemon off;"]
 
-#use the config file into the container
-COPY nginx.conf /etc/nginx/nginx.conf
