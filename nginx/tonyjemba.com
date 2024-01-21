@@ -1,7 +1,7 @@
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name tonyjemba.com www.tonyjemba.com;
+    server_name tonyjemba.com www.tonyjemba.com onlinepharmacy.tonyjemba.com www.onlinepharmacy.tonyjemba.com;
  
     location / {
     # proxy passing to the container with the running static files    
