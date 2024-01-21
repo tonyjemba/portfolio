@@ -11,7 +11,7 @@ services:
         max_attempts: 3
         window: 120s
     ports:
-      - '8080:80'
+      - '80:80'
       - '443:443'
     restart: always
     volumes:
